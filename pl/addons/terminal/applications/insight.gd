@@ -1,10 +1,11 @@
-class_name TApp
-var name : String = "SIGHT"
-var description : String = ""
+extends TApp
+func _ready():
+	name = "INSIGHT"
+	description = ""
 
 func run(Terminal : terminal, params : Array):
 	if params.is_empty():
-		Terminal.add_to_log("Savefile must have a name.")
+		Terminal.add_to_log("You must name them.")
 		return
 
 	if FileAccess.file_exists("user://"+ params[0] + ".save"):

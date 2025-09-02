@@ -12,6 +12,8 @@ config_version=5
 
 config/name="insight"
 run/main_scene="uid://ckc1sg17rg3xr"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="cornl/insight"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

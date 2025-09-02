@@ -39,7 +39,7 @@ func run_command(command : String):
 	if(split_command.size() > 0):
 		var application = split_command[0]
 		var params = split_command.slice(1,split_command.size())
-		run_application(application,params)
+		run_application(application.to_upper(),params)
 
 func clear():
 	log = []
